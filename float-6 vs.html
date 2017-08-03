@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float</title>
+</head>
+<body>
+
+<style>
+	
+	.parent{
+		text-align: left;
+	}
+
+	div:not(.parent){
+		width: 100px;
+		height: 100px;
+		border: solid 3px black;
+		margin: 20px 0;
+		font-size: 50px;
+		text-align: center;
+		line-height: 100px;
+	}
+
+	.ib{
+		display: inline-block;
+		background: green;
+		vertical-align: bottom;
+	}
+
+	.fleft{
+		float: left;
+		background: red;
+		vertical-align: bottom;
+	}
+	.ib:nth-child(3),
+	.fleft:nth-child(3){
+		height: 300px;
+	}
+
+</style>
+	
+	<h1>Inline</h1>
+	<div class="parent">
+		<div class="ib">1</div>
+		<div class="ib">2</div>
+		<div class="ib">3</div>
+		<div class="ib">4</div>
+		<div class="ib">5</div>
+		<div class="ib">6</div>
+	</div>
+
+	<h1>Left floating</h1>
+	<div class="parent">
+		<div class="fleft">1</div>
+		<div class="fleft">2</div>
+		<div class="fleft">3</div>
+		<div class="fleft">4</div>
+		<div class="fleft">5</div>
+		<div class="fleft">6</div>
+	</div>
+
+</body>
+</html>
