@@ -7,9 +7,9 @@
 <body>
 
 <style>
-	body{
+	/*body{
 		height: 2000px;
-	}
+	}*/
 	div{
 		border: solid 5px red;
 		font-size: 25px;
@@ -24,22 +24,23 @@
 		width: 80%;
 		height: 400px;
 		margin: 100px 0 0 10%;
+		/*position: relative;*/
 	}
 
 	.three{
 		width: 80%;
 		height: 250px;
 		margin: 75px 0 0 20%;
+		position: relative;
 	}
 	.absolute{
-		width: 20px;
-		height: 20px;
 		background: blue;
 		position: absolute;
 		border: none;
-
-		top: 10px;
-		left:10px;
+		width: 20px;
+		height:20px;
+		top:-25px;
+		left:0;
 	}
 </style>
 	
@@ -49,7 +50,7 @@
 		<div class="two">
 			<div class="three">
 				<div class="absolute">
-						
+			
 				</div>
 			</div>
 		</div>

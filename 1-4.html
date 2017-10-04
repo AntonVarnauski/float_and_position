@@ -10,10 +10,12 @@
 <style>
 	.tortiki_1{
 		border: solid 5px red;
+		/*height: 250px;*/
 	}
 
 	.tortiki_2{
 		border: solid 5px blue;
+		/*height: 250px;*/
 	}
 
 	img{
@@ -21,15 +23,15 @@
 		margin:10px;
 		float: left;
 	}
-	.clearfix{
+	/*.clearfix{
 		clear: both;
-	}
+	}*/
 	
 	/*Первый способ*/
-	.tortiki_1:after,.tortiki_2:after{
+	.tortiki_1:after, .tortiki_2:after{
 		content: "";
+		width: 100%;
 		display: block;
-		height: 100%;
 		clear: both;
 	}
 
@@ -41,23 +43,21 @@
 	/*Третий вариант*/
 	/*.tortiki_1,.tortiki_2{
 		overflow:hidden;
-	}
-*/
+	}*/
+
 </style>
 
 
 	<div class="tortiki_1">
 		<img src="img/1.jpg">
 		<img src="img/2.jpg">
-		<img src="img/3.jpg">
-		
+		<img src="img/3.jpg">	
 	</div>
 
 	<div class="tortiki_2">
 		<img src="img/3.jpg">
 		<img src="img/2.jpg">
 		<img src="img/1.jpg">
-	
 	</div>
 
 </body>
